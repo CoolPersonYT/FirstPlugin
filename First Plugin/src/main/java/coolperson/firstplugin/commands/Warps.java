@@ -8,10 +8,11 @@ import org.bukkit.command.CommandExecutor;
 import org.bukkit.command.CommandSender;
 import org.bukkit.entity.Player;
 import org.bukkit.scheduler.BukkitRunnable;
-
+import coolperson.firstplugin.Main;
 public class Warps implements CommandExecutor {
-    
-    public Warps(){
+    Main plugin;
+    public Warps(Main main){
+        this.plugin = main;
     }
     
     @Override
