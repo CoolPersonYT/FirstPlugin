@@ -1,8 +1,8 @@
 package coolperson.firstplugin;
 
-import coolperson.firstplugin.commands.rules;
-import coolperson.firstplugin.commands.warps;
-import coolperson.firstplugin.listeners.playerjoin;
+import coolperson.firstplugin.commands.Rules;
+import coolperson.firstplugin.commands.Warps;
+import coolperson.firstplugin.listeners.PlayerJoin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
@@ -11,9 +11,9 @@ public final class Main extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         System.out.println("Plugin Started");
-        getServer().getPluginManager().registerEvents(new playerjoin(),this);
-        this.getCommand("rules").setExecutor(new rules());
-        this.getCommand("warp").setExecutor(new warps());
+        this.getServer().getPluginManager().registerEvents(new PlayerJoin(),this);
+        this.getCommand("rules").setExecutor(new Rules());
+        this.getCommand("warp").setExecutor(new Warps(this));
     }
 
     @Override

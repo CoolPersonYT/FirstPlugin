@@ -6,12 +6,12 @@ import org.bukkit.event.Listener;
 import org.bukkit.event.player.PlayerJoinEvent;
 import org.bukkit.plugin.java.JavaPlugin;
 
-public final class playerjoin implements Listener{
+public final class PlayerJoin implements Listener{
 
 
     @EventHandler
     public void onLogin(PlayerJoinEvent event) {
- // gets player username
+        // gets player username
         String username = event.getPlayer().getDisplayName();
         // if player has joined before sends welcome back message
         if (event.getPlayer().hasPlayedBefore())
