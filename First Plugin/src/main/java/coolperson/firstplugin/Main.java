@@ -13,7 +13,7 @@ public final class Main extends JavaPlugin {
         System.out.println("Plugin Started");
         getServer().getPluginManager().registerEvents(new PlayerJoin(),this);
         this.getCommand("rules").setExecutor(new Rules());
-        this.getCommand("warp").setExecutor(new Warps());
+        this.getCommand("warp").setExecutor(new Warps(this));
     }
 
     @Override
