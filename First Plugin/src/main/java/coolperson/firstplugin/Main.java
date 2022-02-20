@@ -1,8 +1,8 @@
 package coolperson.firstplugin;
 
-import coolperson.firstplugin.commands.rules;
-import coolperson.firstplugin.commands.warps;
-import coolperson.firstplugin.listeners.playerjoin;
+import coolperson.firstplugin.commands.Rules;
+import coolperson.firstplugin.commands.Warps;
+import coolperson.firstplugin.listeners.PlayerJoin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
