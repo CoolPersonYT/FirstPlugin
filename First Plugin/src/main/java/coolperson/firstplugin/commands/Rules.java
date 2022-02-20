@@ -10,15 +10,13 @@ public class Rules implements CommandExecutor {
 
     @Override
     public boolean onCommand(CommandSender sender, Command command, String label, String[] args) {
-        if (command.getName().equalsIgnoreCase("rules")) {
-            if (sender instanceof Player) {
+        
+        if (sender instanceof Player player) 
+            player.sendMessage(ChatColor.BLUE + "--------------------\nRules of CoolPerson.me\n--------------------\n"
+                + ChatColor.AQUA + "\n 1. Don't Be an Idiot" + ChatColor.BLUE + "\n--------------------");
+            
 
-                Player player = (Player) sender;
-                player.getPlayer().sendMessage(ChatColor.BLUE + "--------------------\nRules of CoolPerson.me\n--------------------\n"
-                        + ChatColor.AQUA + "\n 1. Don't Be an Idiot" + ChatColor.BLUE + "\n--------------------");
-            }
-
-        }
+        
         return true;
     }
 }
