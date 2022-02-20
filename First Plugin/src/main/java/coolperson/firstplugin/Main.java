@@ -11,9 +11,9 @@ public final class Main extends JavaPlugin {
     public void onEnable() {
         // Plugin startup logic
         System.out.println("Plugin Started");
-        getServer().getPluginManager().registerEvents(new playerjoin(),this);
-        this.getCommand("rules").setExecutor(new rules());
-        this.getCommand("warp").setExecutor(new warps());
+        getServer().getPluginManager().registerEvents(new PlayerJoin(),this);
+        this.getCommand("rules").setExecutor(new Rules());
+        this.getCommand("warp").setExecutor(new Warps());
     }
 
     @Override
