@@ -1,4 +1,4 @@
-package coolperson.firstplugin.commands;
+package coolperson.coolpersonme.commands;
 
 import org.bukkit.ChatColor;
 import org.bukkit.command.Command;

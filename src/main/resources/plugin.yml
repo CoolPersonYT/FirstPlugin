@@ -1,0 +1,8 @@
+name: Coolpersonme
+version: '${project.version}'
+main: coolperson.coolpersonme.Main
+api-version: 1.18
+prefix: CoolPersonMe
+authors: [ CoolPerson ]
+description: A general purpose plugin for coolperson.me
+website: https://www.coolperson.me

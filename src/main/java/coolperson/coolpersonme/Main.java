@@ -1,8 +1,8 @@
-package coolperson.firstplugin;
+package coolperson.coolpersonme;
 
-import coolperson.firstplugin.commands.Rules;
-import coolperson.firstplugin.commands.Warps;
-import coolperson.firstplugin.listeners.PlayerJoin;
+import coolperson.coolpersonme.commands.Rules;
+import coolperson.coolpersonme.commands.Warps;
+import coolperson.coolpersonme.listeners.PlayerJoin;
 import org.bukkit.plugin.java.JavaPlugin;
 
 public final class Main extends JavaPlugin {
@@ -22,7 +22,3 @@ public final class Main extends JavaPlugin {
         System.out.println("Plugin Stopped");
     }
 }
-
-
-
-

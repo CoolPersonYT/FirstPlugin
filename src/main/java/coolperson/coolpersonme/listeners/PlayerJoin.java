@@ -1,4 +1,4 @@
-package coolperson.firstplugin.listeners;
+package coolperson.coolpersonme.listeners;
 
 import org.bukkit.ChatColor;
 import org.bukkit.event.EventHandler;
